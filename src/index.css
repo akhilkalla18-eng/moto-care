@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0A1128;
+  --color-offwhite: #F7F9FC;
+  --color-accent: #1D4ED8;
+  --color-safe: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    width: 100%;
+  }
+  body, #root {
+    background-color: var(--color-offwhite);
+    color: #0f172a; /* slate-900 */
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
